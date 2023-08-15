@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-entrega 3 JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>EACE comex</h1>
+        <div>
+            <input type="text" placeholder="Buscar..." id="Buscar">
+            <button id="botonBuscar">
+                <img class="botonBuscar icono" src="img/buscar.png" alt="boton buscar">
+            </button>
+            </div>
+    </header>
+    <form id="formulario">
+        <button class="boton botonAgregarTarea" type="button" onclick="agregarElemento()"><img class="icono" src="img/agregarTarea.png" alt="agregar tarea"></button>
+        <button class="botonBorrar"type=reset><img class="icono Borrar" src="img/borrar.png" alt="trash"></button>
+    </form>
+    <table>
+        <tr class="tituloColumnado">
+            <th>Hora de pedido</th>
+            <th>Acción</th>
+            <th>Destinacion</th>
+            <th>Buque</th>
+            <th>Empresa</th>
+            <th>Vencimiento</th>
+            <th>Entregado</th>
+        </tr>
+
+        <tr class="contenidoColumnado">
+            <td class="horaInicio"></td>
+            <td class="accion">
+                <select class="selector">
+                    <option value="rancho">RANCHO</option>
+                    <option value="senasa">SENASA</option>
+                    <option value="cancelaciones">CANCELACIONES</option>
+                    <option value="importacion">IMPORTACION</option>
+                    <option value="retiro">RETIRO</option>
+                    <option value="presentacion_post">PREC. POST EMB</option>
+                </select>
+            </td>
+            <td class="destinacion"><input type="text" placeholder="  Introduce la destinacion"></td>
+            <td class="buque"><input type="text" placeholder=" Buque correspondiente"></td>
+            <td class="empresa"><input type="text" placeholder=" Exportador/Importador"></td>
+            <td class="vencimiento"><input type="date" placeholder=" Fecha de vencimiento"></td>
+            <!-- <td class="entregado"><input type="checkbox"></td> -->
+            
+        </tr>
+    </table>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

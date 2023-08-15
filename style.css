@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: #3498db;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    input#botonBuscar {
+        height: 30px;
+        width: 200px;
+    }
+    
+    input[type=text] {
+        padding: 5px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    th, td {
+        padding: 5px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+    
+    .tituloColumnado {
+        background-color: #f2f2f2;
+    }
+    
+    /* Estilos para el botón */
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+    }
+    
+    .icono {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+    }
+    
+    .borrar {
+        width: 23px;
+        height: 23px;
+    }
+    
+    /* Estilos para el selector */
+    /*   .selector {
+        width: 100%;
+        padding: 5px;
+        border-radius: 8px;
+        } */
+    /* Estilos para el selector */
+    .selector {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px; /* Redondeamos los bordes del cuadro del selector */
+        box-sizing: border-box;
+        background-color: #fff;
+        color: #333;
+        font-size: 14px;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    /* Estilo para las opciones del selector */
+    .selector option {
+        background-color: #fff;
+        color: #333;
+    }
+    
+    /* Estilo para el desplegable (cuando está abierto) */
+    .selector::-ms-expand {
+        display: none;
+    }
+    
+    /* Estilo para el desplegable (cuando está cerrado) */
+    .selector::-webkit-select-placeholder,
+    .selector::-moz-placeholder,
+    .selector::-ms-input-placeholder,
+    .selector::placeholder {
+        color: transparent; /* Para ocultar el texto del desplegable cerrado en navegadores webkit */
+    }
+    
+    /* Estilos para los inputs */
+    input[type=text], input[type=date] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    input[type=checkbox] {
+        transform: scale(1.5); /* Aumentamos el tamaño del checkbox */
+    }
+    
+    .contenidoColumnado {
+        background-color: #fff;
+    }
+    
+    @media (min-width: 768px) {
+        header {
+        flex-direction: column;
+        align-items: center;
+        }
+        input#botonBuscar {
+        width: 100%;
+        max-width: 400px;
+        }
+    }
+    
+
+    
